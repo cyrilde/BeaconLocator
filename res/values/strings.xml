@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="txt_app_name">Beacon Locator</string>
+    <string name="txt_app_description"></string>
+    <string name="txt_confirmation_beacon_removed">beacon has been successfully deleted</string>
+    <string name="txt_beacons">Beacons</string>
+    <string name="txt_beacon">Beacon</string>
+    <string name="txt_beacon_action">Beacon Action</string>
+    <string name="txt_beacon_actions">Beacon Actions</string>
+
+    <!--  -->
+    <string name="action_bar_title_edit_beacon">Edit Beacon</string>
+    <string name="action_bar_title_add_beacon">Add Beacon</string>
+    <string name="action_bar_title_edit_beacon_action">Edit Beacon Action</string>
+    <string name="action_bar_title_add_beacon_action">Add Beacon Action</string>
+    <string name="action_bar_title_back">Back</string>
+    <!--  -->
+    <string name="btn_beacons">Registered Beacons</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_enable">Enable</string>
+    <string name="btn_close">Close App</string>
+
+    <!--  -->
+    <string name="pref_locator">Beacon Locator</string>
+
+    <!--  -->
+    <string name="error_ble_not_supported">Your device does not support BLE</string>
+
+    <!--  -->
+    <string name="menu_editor_edit">Edit</string>
+    <string name="menu_editor_save">Save</string>
+    <string name="menu_editor_delete">Delete</string>
+    <string name="menu_beacon_create">Create a new beacon</string>
+
+    <!--  -->
+    <string name="lbl_beacon_name">Name :</string>
+    <string name="lbl_beacon_name_required">Name * :</string>
+    <string name="lbl_beacon_uuid">UUID :</string>
+    <string name="lbl_beacon_uuid_required">UUID * :</string>
+    <string name="lbl_beacon_major_id">Major ID:</string>
+    <string name="lbl_beacon_major_id_required">Major ID * :</string>
+    <string name="lbl_beacon_minor_id">Minor ID :</string>
+    <string name="lbl_beacon_minor_id_required">Minor ID * :</string>
+    <string name="lbl_beacon_action_name">Name :</string>
+    <string name="lbl_beacon_action_name_required">Name * :</string>
+    <string name="lbl_beacon_action_distance">Distance:</string>
+    <string name="lbl_beacon_action_content_type_required">Content Type * :</string>
+    <string name="lbl_beacon_action_content_url_required">Content URL * :</string>
+    <string name="lbl_beacon_action_notification_message_required">Message * :</string>
+    <string name="lbl_beacon_action_notification_icon_required">Icon * :</string>
+
+    <!--  -->
+    <string name="content_description_beacon_action_add">Add a new beacon action</string>
+    <string name="content_description_beacon_action_edit">Edit the beacon action</string>
+    <string name="content_description_beacon_action_delete">Delete the beacon action</string>
+    <string name="content_description_beacon_action_content_image">Image content</string>
+    <!--  -->
+    <string name="info_required_fields">Fields marked with * are required</string>
+    <string name="info_no_beacons">There are no beacons yet</string>
+    <string name="info_no_actions">Beacon does not contain actions. At least one beacon action is required</string>
+    <string name="warning_unsaved_changes">Changes are not saved\nWould you like to save changes?</string>
+    <string name="warning_bluetooth_required">This application requires enabled bluetooth\n</string>
+    <string name="warning_no_beacon_action">Beacon action is not available</string>
+    <string name="info_beacon_detected">Beacon has been detected</string>
+
+    <!--  -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

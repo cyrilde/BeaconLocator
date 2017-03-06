@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/beacon_editor"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lightgray"
+        android:gravity="left"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="20dp"
+        android:text="@string/txt_beacon"
+        android:textAllCaps="true"
+        android:textSize="16sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:labelFor="@+id/beacon_name"
+                android:text="@string/lbl_beacon_name_required"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/beacon_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:labelFor="@+id/beacon_uuid"
+                android:text="@string/lbl_beacon_uuid_required"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/beacon_uuid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:labelFor="@+id/beacon_major_id"
+                android:text="@string/lbl_beacon_major_id_required"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/beacon_major_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned"
+                android:singleLine="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:labelFor="@+id/beacon_minor_id"
+                android:text="@string/lbl_beacon_minor_id_required"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/beacon_minor_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberSigned"
+                android:singleLine="true" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/lightgray"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="right"
+            android:text="@string/txt_beacon_actions"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/beacon_action_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:drawable/ic_menu_add"
+            android:contentDescription="@string/content_description_beacon_action_add" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/beacon_actions_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/info_no_actions"
+            android:textSize="14sp" />
+
+        <ListView
+            android:id="@+id/beacon_actions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
